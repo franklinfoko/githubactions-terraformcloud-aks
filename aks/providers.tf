@@ -20,13 +20,14 @@ terraform {
     }
   }
 
-    cloud {
-    organization = "franklinfoko"
+  backend "remote" {
+		hostname = "app.terraform.io"
+		organization = "CloudQuickLabs"
 
-    workspaces {
-      name = "githubactions_terraformcloud_aks_workspace"
-    }
-  }
+		workspaces {
+			name = "githubactions_terraformcloud_aks_workspace"
+		}
+	}
 }
 
 provider "azurerm" {
