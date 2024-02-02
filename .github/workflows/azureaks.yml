@@ -25,9 +25,8 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
   
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v2.0.2
+        uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: latest
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
       - name: Terraform Init
