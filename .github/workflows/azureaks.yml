@@ -1,6 +1,7 @@
 name: Create Azure AKS With Terraform
-on:
-  workflow_dispatch:
+# on:
+#   workflow_dispatch:
+  on: [push]
 
 permissions:
       id-token: write
