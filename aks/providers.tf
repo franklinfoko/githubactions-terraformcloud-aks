@@ -22,7 +22,7 @@ terraform {
 
   backend "remote" {
 		hostname = "app.terraform.io"
-		organization = "CloudQuickLabs"
+		organization = "franklinfoko"
 
 		workspaces {
 			name = "githubactions_terraformcloud_aks_workspace"
